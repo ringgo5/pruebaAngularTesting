@@ -1,0 +1,17 @@
+<p>primer-componente works!</p>
+<p>Nombre:</p>
+<input  #nombre type="text" name="" [value]="nombrePorDefecto">
+<button (click)="enviarFormulario(nombre)">Aceptar</button>
+
+<p>{{status}}</p>
+
+<hr>
+
+<p [style.color]="colorTexto">{{edad}}</p>
+<button (click)="sumarEdad()">sumar</button>
+<button (click)="restarEdad()">restar</button>
+
+<hr>
+
+
+<input [(ngModel)]="user"  type="text" name=""> <p>user: {{user}}</p>
